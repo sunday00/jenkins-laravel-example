@@ -1,7 +1,4 @@
 node('master'){
-    environment {
-        PATH = '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
-    }
     stage('demo'){
         echo 'hello world';
     }
