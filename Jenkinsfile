@@ -1,4 +1,7 @@
 node('master'){
+    environment {
+        PATH = '/bin:/usr/bin'
+    }
     stage('demo'){
         echo 'hello world';
     }
