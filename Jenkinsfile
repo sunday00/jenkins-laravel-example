@@ -8,7 +8,7 @@ node('master'){
     }
 
     stage('build'){
-        withEnv(["PATH+COMPOSER=/usr/local/bin"]) {
+        withEnv(["PATH+NOHUP=/usr/bin"]) {
             sh "composer install"
         }
     }
