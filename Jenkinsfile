@@ -4,11 +4,12 @@ node('master'){
     }
 
     stage('checkout'){
-        checkout scm
+        checkout scm;
     }
 
     stage('build'){
-        shell "composer install"
+        shell "composer install";
+        shell "npm run prod";
     }
 
     stage('test'){
