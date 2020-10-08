@@ -8,7 +8,7 @@ node('master'){
     }
 
     stage('build'){
-        composer install
+        sh "composer install"
     }
 
     stage('test'){
