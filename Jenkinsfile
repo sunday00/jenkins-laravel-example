@@ -8,9 +8,7 @@ node('master'){
     }
 
     stage('build'){
-        withEnv(["PATH+NOHUP=/usr/bin"]) {
-            sh "composer install"
-        }
+        composer install
     }
 
     stage('test'){
