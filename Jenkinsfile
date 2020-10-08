@@ -10,6 +10,7 @@ node('master'){
     stage('build'){
         shell "composer install";
         shell "npm run prod";
+        shell "fahsfihfsuiavbilsd";
     }
 
     stage('test'){
